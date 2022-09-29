@@ -9,9 +9,9 @@
 // Get data from localStorage
 // Append data in Product Page
 let body = document.getElementById('body')
-/*
-let pData=JSON.parse(localStorage.getItem('product_data'));
 
+let pData=JSON.parse(localStorage.getItem('product_data'));
+/*
 let viewProduct=document.createElement('div');
 viewProduct.id="product"
 
@@ -220,5 +220,14 @@ b5ch.append(b5h2,b5p1,b5p2,b5btn)
 box5.append(bImg,b5ch)
 div3.append(box1,box2,box3,box4,box5,)
 
+
+
+// Toggle window for cart
+
+
+
+
+
+ 
 body.append(Dilivery_details,div1,div2,div3)
 
