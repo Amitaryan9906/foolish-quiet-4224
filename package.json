@@ -1,0 +1,20 @@
+{
+  "name": "foolish-quiet-4224",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amitaryan9906/foolish-quiet-4224.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amitaryan9906/foolish-quiet-4224/issues"
+  },
+  "homepage": "https://github.com/Amitaryan9906/foolish-quiet-4224#readme"
+}
