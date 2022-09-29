@@ -5,18 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="search.css">
+   
 </head>
-<body>
-    <div id="navbar">
-        <!-- navbar should be placed here -->
+
+    <body>
+    
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <input type="text" id="mkInput" onkeyup="mkFunction()" placeholder="What are you looking for?">
+      <a href="#">PRODUCTS</a>
+      <a href="#">JOURNAL</a>
+      <a href="#">COLLECTIONS</a>
+   
     </div>
-    <div id="body">
-        <!-- Body should be placed here -->
-    </div>
-    <div id="footer">
-        <!-- Footer should  be placed here -->
-    </div>
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">search</span>
+    
 </body>
 </html>
-<script type="module" src="./scripts/search.js"></script>
+ 
+ 
+ 
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "550px";
+      document.querySelector("body").style.backgroundColor="#b3b3b3"
+     
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.querySelector("body").style.backgroundColor="";
+    }
+</script>
+       
+   
+
+
+
+
+
+
+
+
+
+

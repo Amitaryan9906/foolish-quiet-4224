@@ -6,6 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #nj_slider-top{
+            border: 0px solid red;
+            
+        }
+
+        #nj_slider-top > img{
+            width: 100%;
+        }
+
+        #nj_container{
+            border: 0px solid red;
+            width: 95%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+
+
+        .nj_card{
+            border: 0px solid black;
+            text-align: center;
+            padding: 10px;
+            color: #444444;
+            background-color: #f7f7f7;
+        }
+
+        .nj_card > .nj_imgdiv{
+            border: 0px solid blue;
+            width: 100%;
+    
+        }
+
+        .nj_card > .nj_imgdiv > img{
+            width: 100%;
+            height: 100%;
+        }
+
+        #nj_text-section{
+            border: 0px solid red;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        #nj_text-section > p{
+            font-size: 12px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+        }
+
+        #nj_text-section > h3{
+            font-size: 28px;
+            font-family: sans-serif;
+        }
+
+        #nj_finance-section{
+            border: 1px solid red;
+            height: 700px;
+            margin-top: 25px;
+            margin-bottom: 200px;
+            display: grid;
+            grid-template-columns: 25% 25%;
+            gap: 40px;
+            justify-content: center;
+            /* align-items: center; */
+        }
+
+        #nj_finance-section > div{
+            border: 1px solid red;
+
+
+        }
+
+    </style>
 </head>
 <body>
     <div id="navbar">
@@ -13,10 +96,30 @@
     </div>
     <div id="body">
         <!-- Body should be placed here -->
+        <div id="nj_slider-top"></div>
+        <div id="nj_text-section">
+            <p>HEY NOW, HEY NOW, THIS IS WHAT DREAMS ARE MADE OF</p>
+            <h3>Handpicked Deals for the audiophile in you</h3>
+        </div>
+        <div id="nj_container"></div>
+        <div id="nj_finance-section">
+            <div>
+               <div>
+                <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/simpl-homepage_238x.png?v=1661144152" alt="">
+               </div>
+            </div>
+            <div>
+                
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphones-Zone-bajaj-finserv-logo_254x.png?v=1657960437" alt="">
+            </div>
+        </div>
     </div>
     <div id="footer">
         <!-- Footer should  be placed here -->
     </div>
+    
 </body>
 </html>
 <script type="module" src="./scripts/index.js"></script>
