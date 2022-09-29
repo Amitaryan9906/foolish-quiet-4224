@@ -32,9 +32,10 @@ slideShow(sliderImg);
 
 const productFetch = async () =>{
     try{
-        let res = await fetch('http://localhost:3000/products');
+        let res = await fetch(' http://localhost:3000/products');
 
         let data = await res.json();
+        console.log(data)
 
         dataAppend(data)
 
@@ -49,10 +50,13 @@ productFetch()
 const dataAppend = (data) =>{
     let container = document.getElementById("nj_container");
 
-    data.forEach(ele =>{
+    data.forEach((ele,i) =>{
 
     let card = document.createElement("div");
     card.setAttribute("class","nj_card");
+    card.addEventListener("click", function(){
+        catchProduct(data,i,ele.id)
+    })
 
    
     let img = document.createElement("img");
@@ -76,4 +80,27 @@ const dataAppend = (data) =>{
 
 
     })
+}
+
+const catchProduct = (data,i,id) =>{
+    window.location.href="./product.html"
+
+let pro = data.filter((ele,i) =>{
+    return i == id
+})
+
+let obj={}
+pro.forEach((ele) =>{
+    obj = {
+        Name:ele.name,
+        Gif:ele.Gif,
+        Discount:ele.discount,
+        Rating:ele.rating,
+        Proimg:ele.ProImg,
+        MRP:ele.MRP,
+        SellingPrice:ele.SellingPrice,
+        OffierPrice: 44990,
+    }
+})
+localStorage.setItem("Product",JSON.stringify(obj))
 }
