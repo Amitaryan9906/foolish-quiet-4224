@@ -1,15 +1,18 @@
 #mkInput {
-    background-image: url(https://www.w3schools.com/css/searchicon.png);
-    background-position: 10px 10px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAyNCAyNCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTSA5IDIgQyA1LjE0NTg1MTQgMiAyIDUuMTQ1ODUxNCAyIDkgQyAyIDEyLjg1NDE0OSA1LjE0NTg1MTQgMTYgOSAxNiBDIDEwLjc0Nzk5OCAxNiAxMi4zNDUwMDkgMTUuMzQ4MDI0IDEzLjU3NDIxOSAxNC4yODEyNSBMIDE0IDE0LjcwNzAzMSBMIDE0IDE2IEwgMjAgMjIgTCAyMiAyMCBMIDE2IDE0IEwgMTQuNzA3MDMxIDE0IEwgMTQuMjgxMjUgMTMuNTc0MjE5IEMgMTUuMzQ4MDI0IDEyLjM0NTAwOSAxNiAxMC43NDc5OTggMTYgOSBDIDE2IDUuMTQ1ODUxNCAxMi44NTQxNDkgMiA5IDIgeiBNIDkgNCBDIDExLjc3MzI2OCA0IDE0IDYuMjI2NzMxNiAxNCA5IEMgMTQgMTEuNzczMjY4IDExLjc3MzI2OCAxNCA5IDE0IEMgNi4yMjY3MzE2IDE0IDQgMTEuNzczMjY4IDQgOSBDIDQgNi4yMjY3MzE2IDYuMjI2NzMxNiA0IDkgNCB6Ij48L3BhdGg+PC9zdmc+);
+    background-position: 25px 10px;
     background-repeat: no-repeat;
     width: 90%;
     font-size: 16px;
-    padding: 12px 20px 12px 40px;
+    padding: 12px 10px 12px 60px;
+    padding-bottom: 30px;
     background-color: white;
-    border: 1px solid #eceaf2;
-    margin-bottom: 12px;
+    border: 0;
+    margin-bottom: 25px;
+    outline: none;
+    border-bottom: 1px solid rgb(220, 219, 219);;
   }
-  
+
           .sidenav {
             height: 100%;
             width: 0;
@@ -19,7 +22,7 @@
             right: 0;
             background-color: white;
             overflow-x: hidden;
-            transition: 0.5s;
+            transition: 0.3s;
             padding-top: 60px;
             
           }
@@ -27,12 +30,13 @@
           .sidenav a {
             padding: 8px 8px 8px 32px;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 13px;
             color: rgb(99, 98, 98);
             transition: 0.3s;
           }
           
           .sidenav a:hover {
+            font-weight: 550;
             color: #3c07ff;
           }
           
@@ -48,4 +52,39 @@
             .sidenav {padding-top: 15px;}
             .sidenav a {font-size: 18px;}
           }
+
+
+          #mkData{
+            display:grid;
+            grid-template-columns: 30% 70%;
+            column-gap: 76px;
+            row-gap: 40px;
+            margin-top: 40px;
+        }
+        #mkData>div{
+          
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+          }
+          #mkData>div>a{
+          text-decoration: none;
+          cursor: pointer;
+          padding-left: -20px;
+          }
+        #mkData>div>a>img{
+          height: 100px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            width: 100%;
+           
+        }
+        
+        #mkData>div>h3,h4{
+          margin: 0px;
+          margin-bottom: 4px;
+        }
+      
+          
+
+
+
+
   
