@@ -124,7 +124,7 @@ function openNav() {
             name: "HiFiMAN Edition XS",
             discount:"Get flat 12.50% off",
             url:"https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-HiFiMAN-Edition-XS-250-250.jpg?v=1663240157"},
-    
+        
             {id: 20, 
             name: "Chord Mojo 2",
             discount:"Get Mojo 2 Premium Leather Case free",
