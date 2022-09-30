@@ -10,61 +10,133 @@
 // Append data in Product Page
 let body = document.getElementById('body')
 
-let pData=JSON.parse(localStorage.getItem('product_data'));
-/*
-let viewProduct=document.createElement('div');
-viewProduct.id="product"
+let pData=JSON.parse(localStorage.getItem('Product'));
+console.log(pData);
+
+let products = document.createElement('div')
+  products.id='products'
+
+//  For Product Images
+
+
+let ProImgData = document.createElement('div');
+ProImgData.id='proImgData'
+
+  const ProImg =(data)=>{
+    // localStorage.setItem('ImgData',JSON.stringify(pData.Proimg[4]))
+    let box= document.createElement('div');
+    box.className='Pro_img';
+
+
+
+let moreImg= document.createElement('div')
+moreImg.className='moreImg'
+// For accessing Images
+for(let i=0; i<data.Proimg.length; i++){
+let icons = document.createElement('img');
+icons.src=data.Proimg[i];
+moreImg.append(icons)
+// console.log(data.Proimg[i]);
+icons.addEventListener('click',()=>{
+  localStorage.setItem('ImgData',JSON.stringify(data.Proimg[i]));
+  console.log("Hello")
+  window.location.href="product.html"
+})
+}
+let imgData=JSON.parse(localStorage.getItem('ImgData')) 
+console.log(imgData)
+let img = document.createElement('img');
+img.src=imgData;
+ProImgData.append(img,moreImg)
+  }
+  ProImg(pData)
 
 const appendProduct =(data)=>{
-    let img = document.createElement('img');
-    img.src =data.Image;
+    let box=document.createElement('div');
+    box.className="product"
 
-    let brand = document.createElement('h3')
-    brand.innerHTML=data.Brand;
 
     let product_name = document.createElement('h2')
-    product_name.innerHTML=data.Product;
+    product_name.innerHTML=data.Name;
+    product_name.className="product-name"
 
-    let rating = document.createElement('img')
-    rating.src =data.Rating
+    let rating = document.createElement('a')
+    let ratingSpan = document.createElement('span')
+    ratingSpan.innerHTML =data.Rating
+    rating.id="rating"
+    let ratingImg = document.createElement('img')
+    ratingImg.src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Rating_stars_4.5.svg/1024px-Rating_stars_4.5.svg.png"
+   rating.append(ratingImg,ratingSpan)
 
-    let mrp= document.createElement('p')
-    mrp.innerHTML=data.MRP;
+    let mrp= document.createElement('a')
+    let MRP = document.createElement('p');
+    MRP.innerHTML ='MRP: ₹';
+    let mrpSpan= document.createElement('span')
+    mrpSpan.innerHTML =data.MRP;
+    mrp.id='mrp'
+    mrp.append(MRP,mrpSpan);
 
-    let sPrice = document.createElement('p')
-    sPrice.innerHTML=data.SellingPrice;
+    let sPrice = document.createElement('a')
+    // sPrice.innerHTML=data.SellingPrice;
+    let sPriceP = document.createElement('p')
+      sPriceP.innerHTML='Selling Price: ₹'
+      let sPricespan = document.createElement('span');
+      sPricespan.innerText=data.SellingPrice;
+      sPrice.id='sPrice'
+sPrice.append(sPriceP,sPricespan);
 
-    let offer_price = document.createElement('p')
-    offer_price.innerHTML=data.OfferPrice;
+    let offer_price = document.createElement('a')
+    // offer_price.innerHTML=data.OffierPrice;
+    let offerP= document.createElement('p');
+    offerP.innerHTML='Festival of Sound Sale Price: ';
+    
+    let offerspan = document.createElement('span');
+    offerspan.innerHTML=` ₹ ${data.OffierPrice}`;
+    offerspan.id='offierPrice';
+
+offer_price.append(offerP, offerspan);
+
+  let bankOffer = document.createElement('p');
+  bankOffer.innerHTML='Or ₹ 15,000 (Simpl/Bajaj/Zest/Cards) '
 
     let wish_div= document.createElement('div')
     let gif= document.createElement('img')
     gif.src=data.Gif
+let wp1= document.createElement('p');
+wp1.innerHTML="THE BIGGEST EVENT OF THE YEAR: FESTIVAL OF SOUND SALE ✨"
+let wp2= document.createElement('p');
+wp2.innerHTML="Up to 80% off | 125+ Deals on 35+ Brands. Explore now"
+let wish_container= document.createElement('div');
+wish_container.append(wp1,wp2);
+
+wish_div.append(gif,wish_container);
+
     let textDiv= document.createElement('div')
     let text1= document.createElement('p')
     text1.innerHTML="THE BIGGEST EVENT OF THE YEAR: FESTIVAL OF SOUND SALE"
     let text2 = document.createElement('h3');
-    text2.innerHTML="Up to 80% off | 125+ Deals on 35+ Brands. Explore now"
+    text2.innerHTML=data.Discount;
 
     let cartData=JSON.parse(localStorage.getItem('cart_items')) || [];
     let addToCart = document.createElement('button');
     addToCart.innerHTML="ADD TO CART";
     addToCart.addEventListener('click', () =>{
+      cartData.push(pData)
     localStorage.setItem('cart_items', JSON.stringify(cartData));
-    textDiv.append(text1,text2);
-    wish_div.append(gif,textDiv)
+    // textDiv.append(text1,text2);
+    // wish_div.append(gif,textDiv)
+
+    })
     let confusion= document.createElement('button');
     confusion.innerHTML="CONFUSED? TALK TO A HEADPHONE GURU"
     confusion.addEventListener('click', () =>{
 
     })
-
-   viewProduct.append(img,brand,product_name,rating,mrp,sPrice,offer_price)
-  body.append(viewProduct);
-    })
+    box.append(product_name,rating,mrp,sPrice,offer_price,bankOffer,wish_div,addToCart,confusion)
+products.append(box)
 }
 appendProduct(pData)
-*/
+
 
 // FOR DELIVERY & SHIPPING
 
@@ -229,5 +301,5 @@ div3.append(box1,box2,box3,box4,box5,)
 
 
  
-body.append(Dilivery_details,div1,div2,div3)
+body.append(ProImgData,products,Dilivery_details,div1,div2,div3)
 

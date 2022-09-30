@@ -202,3 +202,98 @@ transition:0.5s;
     width:25px;
     height:20px;
 }
+
+#proImgData{
+    display:flex;
+    height:auto;
+    width: 50%;
+flex-direction:column;
+padding-bottom: 25px;
+}
+#proImgData>div{
+margin:auto;
+
+}
+#proImgData>div>img{
+    width:60px;
+    margin:auto;
+    margin-left: 10px;
+
+}
+#proImgData>img{
+    display:block;
+    width:70%;
+    margin:auto;
+    margin-bottom: 50px;
+}
+.product{
+    position:absolute;
+left:50%;
+top:0;
+width:44%;
+height:auto;
+padding:20px;
+}
+.product>div{
+    display: flex;
+    width:100%;
+    background-color:blue;
+    color:white;
+    border-radius:20px;
+margin: auto;
+}
+.product>div>img{
+    margin-left: 20px;
+    margin-right: 50px;
+}
+.product div+button{
+    width:100%;
+    height:50px;
+    border-radius:20px;
+    background-color:blue;
+    color:white;
+    border: none;
+    padding:5px;
+    font-weight: bold;
+    margin-top:30px;
+
+}
+.product button+button{
+    width:100%;
+    height:50px;
+    border-radius:20px;
+    background-color:rgb(165, 165, 167);
+    color:white;
+    border: none;
+    padding:5px;
+    font-weight: bold;
+    margin-top:30px;
+
+}
+#proImgData>div>img:hover,.product div+button:hover,.product button+button:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+#rating>img{
+width:50px;
+}
+#mrp ,#sPrice, #sPrice+a{
+    display:flex;
+    align-items:center;
+}
+#mrp ,#sPrice{
+   text-decoration: line-through; 
+}
+#sPrice+a{
+font-weight: bold;
+}
+#offierPrice{
+    color:blue;
+    font-size:20px;
+}
+.product-name{
+    font-size:30px;
+    font-weight:bold;
+    color:rgb(69, 69, 69);
+    
+}
