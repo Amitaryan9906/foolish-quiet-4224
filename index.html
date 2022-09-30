@@ -7,6 +7,7 @@
     <title>Headphonezone</title>
     <link rel="icon" type="image/x-icon" href="https://pbs.twimg.com/profile_images/1478249984000626689/1cTOLadC_400x400.jpg">
     <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body{
             margin: 0px;
@@ -75,14 +76,14 @@
             border: 0px solid red;
             height: 700px;
             margin-top: 25px;
-            margin-bottom: 200px;
+            margin-bottom: 20px;
             display: grid;
             grid-template-columns: 27% 27%;
             gap: 30px;
             justify-content: center;
             background-color: #f5f5f5;
             padding-top: 20px;
-            /* align-items: center; */
+        
         }
 
         #nj_finance-section > div{
@@ -107,6 +108,68 @@
             color: #7f8d8c;
         }
 
+        #nj_flagship{
+            border: 0px solid red;
+            width: 90%;
+            height: auto;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        #nj_flagship > h1{
+            font-size: 40px;
+            text-align: center;
+        }
+
+        #nj_flagbtn{
+            border: 0px solid red;
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #nj_flagbtn > button{
+            width: 200px;
+            height: 50px;
+            background-color:#e6e6e6;
+            border-radius: 30px;
+            border: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        #nj_productCard{
+            border: 0px solid blue;
+            margin-top: 10px;
+            display: grid;
+            /* justify-content: space-evenly; */
+            grid-template-columns: repeat(5,1fr);
+            gap: 10px;
+            
+        }
+
+        #nj_productCard > div{
+            border: 0px solid red;
+            text-align: center;
+        }
+
+        #nj_productCard > div > div{
+            border: 0px solid black;
+            text-align: center;
+            /* height: 50%; */
+            
+        }
+
+        #nj_productCard > div > div > img{
+            width: 50%;
+            /* height: 50%; */
+        }
+
+        .nj_mrp{
+            text-decoration: line-through;
+        }
 
     </style>
 </head>
@@ -155,6 +218,19 @@
                 <p>Transaction value: Available on all orders above Rs.</p>
                 <p>4,500/-</p>
                 <p>Payment Gateway: Choose Razorpay at checkout</p>
+            </div>
+        </div>
+        <div id="nj_flagship">
+            <h1>SHOP THE FESTIVAL OF SOUND SALE</h1>
+            <div id="nj_flagbtn">
+                <button id="wired_ear">WIRED EARPHONES</button>
+                <button id="wired_hed">WIRED HEADPHONES</button>
+                <button id="amp">AMPS & DACS</button>
+                <button id="wirless">TURE WIRELESS</button>
+                <button id="wirless_hed">WIRELESS HEADPHONES</button>
+            </div>
+            <div id="nj_productCard">
+
             </div>
         </div>
     </div>

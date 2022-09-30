@@ -9,6 +9,7 @@
         "MRP": 129999,
         "SellingPrice": 89990,
         "OfferPrice": 49990,
+        "type": "Wired Earphone",
         "ProImg" :[
                 "https://cdn.shopify.com/s/files/1/0153/8863/products/3_608d635f-7830-4cfe-9884-c63d273472f0_700x.jpg?v=1663224444",
                 "https://cdn.shopify.com/s/files/1/0153/8863/products/4_e2bc35c9-7072-4b03-9f4a-24da04aed7b4_700x.jpg?v=1663224444",
@@ -30,6 +31,7 @@
         "MRP": 199999,
         "SellingPrice": 99999,
         "OfferPrice": 89999,
+        "type": "Wired Warphone",
         "ProImg" : [
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Final-A8000-01_06656176-cb10-4d4a-bd1c-8e328f3d6478_700x.jpg?v=1644220901",
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Final-Audio-A8000-01_54a4af03-1424-4943-af17-37535f23ae9e_700x.jpg?v=1644220901",
@@ -53,6 +55,7 @@
         "MRP": 129990,
         "SellingPrice": 99990,
         "OfferPrice": 59999,
+        "type": "Wired Earphone",
         "ProImg":[
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Ara-01_700x.jpg?v=1591607324",
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Ara-02_700x.jpg?v=1591607325",
@@ -74,6 +77,7 @@
         "MRP": 109999,
         "SellingPrice": 89999,
         "OfferPrice": 56999,
+        "type": "Wired Earphone",
         "ProImg": [
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Campfire-Audio-Dorado2020-01_700x.jpg?v=1606812298",
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Campfire-Audio-Dorado2020-02_700x.jpg?v=1606812298",
@@ -97,6 +101,7 @@
         "MRP": 114990,
         "SellingPrice": 64990,
         "OfferPrice": 59990,
+        "type": "AMP and DACS",
         "ProImg":[
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Stax-SRS-3100-05_700x.jpg?v=1599309890",
 	        "https://cdn.shopify.com/s/files/1/0153/8863/products/Stax-SRS-3100-1_700x.jpg?v=1599309890",
@@ -117,6 +122,7 @@
         "MRP": 12999,
         "SellingPrice": 9999,
         "OfferPrice": 6999,
+        "type": "Wired Earphone",
         "ProImg":[
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Final-Audio-A3000-02_700x.jpg?v=1651152415",
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Final-Audio-A3000-01_700x.jpg?v=1651152415",
@@ -139,6 +145,7 @@
         "MRP": 2499,
         "SellingPrice": 1799,
         "OfferPrice": 1599,
+        "type": "Wired Warphone",
         "ProImg":[
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-CCA-LYRA-Gallery-1160-1160_800x.jpg?v=1659512980",
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-CCA-LYRA-01_800x.jpg?v=1659512980",
@@ -162,6 +169,7 @@
         "MRP": 2499,
         "SellingPrice": 1799,
         "OfferPrice": 1599,
+        "type": "Wired Headphone",
         "ProImg":[
             "https://cdn.shopify.com/s/files/1/0153/8863/products/focal-stellia-headphone-zone-13115297890367_800x.jpg?v=1580151305",
             "https://cdn.shopify.com/s/files/1/0153/8863/products/focal-stellia-headphone-zone-13115296579647_800x.jpg?v=1580151182",
@@ -184,6 +192,7 @@
         "MRP": 2499,
         "SellingPrice": 1999,
         "OfferPrice": 1699,
+        "type": "Wired Earphone",
         "ProImg":[
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-KZ-ZEX-Black-1_800x.jpg?v=1632918357",
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-KZ-ZEX-Black-2_800x.jpg?v=1632918833",
@@ -205,6 +214,7 @@
         "MRP": 9999,
         "SellingPrice": 7999,
         "OfferPrice": 6999,
+        "type": "AMP and DACS",
         "ProImg":[
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-iFi-Audio-ZEN-Air-DAC-04_800x.jpg?v=1646203112",
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-iFi-Audio-ZEN-Air-DAC-01_800x.jpg?v=1646203112",
@@ -228,6 +238,7 @@
         "MRP": 8999,
         "SellingPrice": 6999,
         "OfferPrice": 6299,
+        "type": "True Wirless",
         "ProImg":[
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Lypertek-Pureplay-Z3-01_800x.jpg?v=1628258447",
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Lypertek-PurePlay-Z3-02_800x.jpg?v=1628258447",
@@ -251,6 +262,7 @@
         "MRP": 10999,
         "SellingPrice": 8999,
         "OfferPrice": 7999,
+        "type": "AMP and DACS",
         "ProImg":[
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Shanling-UA3-3_800x.jpg?v=1655191048",
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Shanling-UA3-1_800x.jpg?v=1655191048",
@@ -274,6 +286,7 @@
         "MRP": 14999,
         "SellingPrice": 4999,
         "OfferPrice": 2999,
+        "type": "AMP and DACS",
         "ProImg":[
             "https://cdn.shopify.com/s/files/1/0153/8863/products/astell-kern-ak-xb10-headphone-zone-13983714246719_700x.jpg?v=1589284696",
 	        "https://cdn.shopify.com/s/files/1/0153/8863/products/astell-kern-ak-xb10-headphone-zone-13983716311103_700x.jpg?v=1589284702",
@@ -298,6 +311,7 @@
         "MRP": 29990,
         "SellingPrice": 24990,
         "OfferPrice": 21990,
+        "type": "Wirless headphone",
         "ProImg":[
             "https://cdn.shopify.com/s/files/1/0153/8863/products/V-moda-Crossfade-Codex-black-new-01_800x.jpg?v=1599306454",
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-V-Moda-Crossafde-2-Wireless-1160-1160-1_f7380b16-a133-4efa-a1c4-2a88695c4226_800x.jpg?v=1592915176",
@@ -318,6 +332,7 @@
         "MRP": 24999,
         "SellingPrice": 23999,
         "OfferPrice": 18990,
+        "type": "AMP and DACS",
         "ProImg":[
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Cayin-RU6-1160-1160-012_800x.jpg?v=1638015662",
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Cayin-RU6-1160-1160-011_800x.jpg?v=1638015662",
@@ -339,6 +354,7 @@
         "MRP": 8999,
         "SellingPrice": 7490,
         "OfferPrice": 6990,
+        "type": "Wired Earphone",
         "ProImg":[
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Moondrop-Aria_800x.jpg?v=1663323157",
             "https://cdn.shopify.com/s/files/1/0153/8863/products/headphone-Zone-Moondrop-Aria-2_800x.jpg?v=1663323157",
@@ -360,6 +376,7 @@
         "MRP": 29999,
         "SellingPrice": 27999,
         "OfferPrice": 24999,
+        "type": "Wired Headphone",
         "ProImg":[
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-HiFiMAN-Sundara-1160-1160-1_800x.jpg?v=1592332660",
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-HiFiMAN-Sundara-1160-1160-2_800x.jpg?v=1592332661",
@@ -380,6 +397,7 @@
         "MRP": 30999,
         "SellingPrice": 28999,
         "OfferPrice": 25999,
+        "type": "Wired Headphone",
         "ProImg":[
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Meze-99-Classics-gold-1160-1160-1_800x.jpg?v=1591901374",
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Meze-99-Classics-gold-1160-1160-2_800x.jpg?v=1591901373",
@@ -401,6 +419,7 @@
         "MRP": 30999,
         "SellingPrice": 28999,
         "OfferPrice": 25999,
+        "type": "Wirless headphone",
         "ProImg":[
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-HiFIMAN-XS-1160-1160-05_800x.jpg?v=1641460416",
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-HiFiMAN-Edition-XS-1160-1160-04_800x.jpg?v=1641460416",
@@ -423,6 +442,7 @@
         "MRP": 49990,
         "SellingPrice": 49990,
         "OfferPrice": 44990,
+        "type": "AMP and DACS",
         "ProImg":[
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Chord-Mojo2-1160-1160-03_800x.jpg?v=1643635244",
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Chord-Mojo2-1160-1160-01_800x.jpg?v=1657015215",
@@ -443,6 +463,7 @@
         "MRP": 49990,
         "SellingPrice": 49990,
         "OfferPrice": 44990,
+        "type": "AMP and DACS",
         "ProImg":[
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Astell_Kern-AK70-MKii-01_800x.jpg?v=1662468494",
             "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-Astell_Kern-AK70-MK_PU-Case-1_800x.jpg?v=1663578484",
