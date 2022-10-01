@@ -127,12 +127,12 @@ pro.forEach((ele) =>{
     }
 })
 localStorage.setItem("Product",JSON.stringify(obj))
-<<<<<<< HEAD
-}
-
-=======
 // <<<<<<< HEAD
 }
+
+// =======
+// <<<<<<< HEAD
+// }
 
 // const 
 
@@ -227,4 +227,4 @@ function displaydata(data){
 }
 
 
->>>>>>> 62d29703f26fc345227db7784bb945845f49efa6
+// >>>>>>> 62d29703f26fc345227db7784bb945845f49efa6
