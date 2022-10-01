@@ -4,6 +4,15 @@
     font-family: sans-serif;
 }
 
+#RPa {
+    text-decoration: none;
+}
+
+#navleftRP #RPa:hover {
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+}
+
 #logoRP a img {
     width: 100px;
     height: 60px;
