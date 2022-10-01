@@ -180,7 +180,7 @@ function navbar() {
                 </div>
             </div>
         </li>
-        <li class="RPboldi"> <a href="#">Headphone Finder </a> </li>
+        <li class="RPboldi"> <a href="finder.html">Headphone Finder </a> </li>
         <li class="RPboldi"> <a href="#">Events </a>
             <div class="mm6RP">
                 <div class="mmitems2RP">
