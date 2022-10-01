@@ -1,7 +1,19 @@
-#body{
-    width: 95%;
-    margin:auto;
+body{
+    margin:0;
+    padding:0;
 }
+
+/*  Navigation Bar */
+
+#navigationBar {
+    z-index: 2;
+    height: 90px;
+    background-color:blue;
+    position:sticky;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
 
 
 #dilivery-details{
@@ -10,6 +22,7 @@ display:flex;
 flex-direction:column;
 position:relative;
 left:50%;
+top: 50px;
 }
 #dilivery-details>div{
     display:flex;
@@ -169,39 +182,8 @@ margin-top: 20%;
 margin:auto;
 }
 
-#pop_up{
-    position:absolute;
-    top:70px;
-    width: 30%;
-    height: 720px;
-    transform: translateX(+400px);
-    margin:auto;
-    margin-left:43.8%;
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-background-color:white;
-opacity: 1;
-transition:0.5s;
-}
-#pop_up>div:nth-child(1){
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-    border-bottom: 1px solid gray;
-    padding-left: 10px;
-    padding-right: 10px;
+/*  */
 
-}
-#pop_up>div:nth-child(1)>div{
-    display:flex;
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-
-}
-#pop_up>div:nth-child(1) img{
-    width:25px;
-    height:20px;
-}
 
 #proImgData{
     display:flex;
@@ -229,7 +211,7 @@ margin:auto;
 .product{
     position:absolute;
 left:50%;
-top:0;
+top:120px;
 width:44%;
 height:auto;
 padding:20px;
@@ -296,4 +278,65 @@ font-weight: bold;
     font-weight:bold;
     color:rgb(69, 69, 69);
     
+}
+
+#navbar {
+    display:flex;
+    z-index: 1;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  height: 180px;
+  transition: top 0.3s;
+  visibility: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  flex-direction: row;
+align-items: center;
+justify-content: space-between;
+
+}
+#navbar>div{
+    display: flex;
+align-items: end;
+margin-left: 50px;
+align-items: center;
+}
+#navbar>div>a{
+    display: flex;
+    margin-top: 80px;
+}
+#navbar img {
+width:100px;
+height:100px;
+margin-top:80px
+}
+#navbar button{
+    margin-top: 80px;
+    height:40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius:20px;
+    border:none;
+    color:white;
+    background-color:blue;
+    font-weight:bold;
+    margin-right: 50px;
+}
+.div2_P{
+    width: 85%;
+    display: flex;
+margin: auto;
+}
+.div2_P p{
+    width:40%;
+    margin-left: 50px;
+}
+.div2_Img{
+
+display: flex;
+flex-direction:column;
+width: 70%;
+height: auto;
+margin: auto;
 }

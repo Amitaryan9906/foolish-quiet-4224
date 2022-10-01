@@ -130,6 +130,10 @@ localStorage.setItem("Product",JSON.stringify(obj))
 // <<<<<<< HEAD
 }
 
+// =======
+// <<<<<<< HEAD
+// }
+
 // const 
 
 // document.getElementById("wired_ear").addEventListener("click",function(){
@@ -223,3 +227,4 @@ function displaydata(data){
 }
 
 
+// >>>>>>> 62d29703f26fc345227db7784bb945845f49efa6
