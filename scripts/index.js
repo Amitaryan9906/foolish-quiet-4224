@@ -104,12 +104,5 @@ pro.forEach((ele) =>{
     }
 })
 localStorage.setItem("Product",JSON.stringify(obj))
-// addToLs()
-
 }
 
-//  For Update Image
-// const addToLs=()=>{
-//     localStorage.setItem("ImgData",JSON.stringify(ele.ProImg[1]))
-//     console.log("Added")
-// }

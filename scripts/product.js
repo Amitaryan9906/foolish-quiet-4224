@@ -8,7 +8,7 @@
 
 // Get data from localStorage
 // Append data in Product Page
-let body = document.getElementById('body')
+let body = document.getElementById('bodyP')
 
 let pData=JSON.parse(localStorage.getItem('Product'));
 console.log(pData);
@@ -27,7 +27,7 @@ ProImgData.id='proImgData'
     let box= document.createElement('div');
     box.className='Pro_img';
 
-
+    // localStorage.setItem('ImgData',JSON.stringify(data.Proimg[1]));
 
 let moreImg= document.createElement('div')
 moreImg.className='moreImg'
@@ -43,7 +43,7 @@ icons.addEventListener('click',()=>{
   window.location.href="product.html"
 })
 }
-let imgData=JSON.parse(localStorage.getItem('ImgData')) 
+let imgData=JSON.parse(localStorage.getItem('ImgData'))
 console.log(imgData)
 let img = document.createElement('img');
 img.src=imgData;
@@ -163,7 +163,12 @@ div1.append(cdDiv,img1)
 
 // Suggestion section
 // ---------------------------
+let suggestion = document.createElement('div');
+suggestion.className='suggestion'
 
+const sugg =(data)=>{
+
+}
 // ---------------------------
 
 let div2 = document.createElement('div')
@@ -185,6 +190,32 @@ tab5.innerHTML='ABOUT AUDEZE';
 let tab6 = document.createElement('p')
 tab6.innerHTML='FAQs';
 div2.append(tab1,tab2,tab3,tab4,tab5,tab6)
+
+
+// Div 2 paragraphs
+
+let div2_P = document.createElement('div');
+div2_P.className='div2_P';
+
+let div2_h2 = document.createElement('h2');
+div2_h2.innerHTML = 'M-SHAPED BERYLLIUM DOME FOR FLAWLESS SOUND'
+let div2_p1 = document.createElement('p');
+div2_p1.innerHTML ='Focal has been known for producing pure acoustic sound for 40 years and the Stellia is one of them. An exceptional headphone, these are equipped with an M-shaped pure Beryllium dome and new surround, frameless 100% copper voice coil that ensures stunning dynamics for this closed-back headphone. The Stellia reveals the tiniest details and realistic audio reproduction.'
+
+div2_P.append(div2_h2,div2_p1)
+//Div2 images
+
+let div2_Img = document.createElement('div');
+div2_Img.className='div2_Img'
+for (let i = 0; i <3;i++) {
+  let div2_Img1 = document.createElement('img');
+div2_Img1.src =pData.Proimg[i]
+div2_Img.append(div2_Img1);
+}
+
+
+
+
 
 // Contant div3 
 let div3 = document.createElement('div')
@@ -240,7 +271,7 @@ d3.append(d3h4,d3p)
 
 box2.append(image1,d1,image2,d2,image3,d3)
 
-//  This bob for queries
+//  This box for queries
 let box3 = document.createElement('div')
 let bp1 = document.createElement('p')
 bp1.innerHTML='What is the physical condition of the headphones?'
@@ -294,12 +325,48 @@ div3.append(box1,box2,box3,box4,box5,)
 
 
 
-// Toggle window for cart
+// Toggle navbar for cart
+
+let PopUpnavbar =document.getElementById("navbar");
+let PopupData=document.createElement("div");
+let PopupImg = document.createElement('img');
+PopupImg.src=pData.Proimg[1];
+let anchor=document.createElement("a");
+let title=document.createElement("p");
+title.innerHTML=pData.Name;
+let P_price=document.createElement("p");
+P_price.innerHTML=` = ₹ ${pData.OffierPrice}`;
+
+anchor.append(title,P_price);
+PopupData.append(PopupImg,anchor);
+
+let PopUpBtn =document.createElement("button");
+PopUpBtn.innerHTML='ADD TO CART';
+
+let cartData=JSON.parse(localStorage.getItem('cart_items')) || [];
 
 
+PopUpBtn.addEventListener("click",()=>{
 
+  cartData.push(pData)
+  localStorage.setItem('cart_items',JSON.stringify(cartData));
+})
+
+PopUpnavbar.append(PopupData,PopUpBtn)
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
+    document.getElementById("navbar").style.top = "0";
+    document.getElementById("navbar").style.visibility="visible";
+
+  } else {
+    document.getElementById("navbar").style.top = "-250px";
+  }
+}
 
 
  
-body.append(ProImgData,products,Dilivery_details,div1,div2,div3)
+body.append(ProImgData,products,Dilivery_details,div1,div2,div2_P,div2_Img,div3)
 
