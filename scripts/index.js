@@ -35,9 +35,12 @@ const productFetch = async () =>{
         let res = await fetch(' http://localhost:3000/products');
 
         let data = await res.json();
-        console.log(data)
+        // console.log(data)
 
         dataAppend(data)
+        
+           
+        
 
     }catch(err){
         console.log(err)
@@ -81,6 +84,26 @@ const dataAppend = (data) =>{
 
 
     })
+
+    document.getElementById("wired_ear").addEventListener("click", function(){
+        wired_ear(data)
+    })
+
+    document.getElementById("wired_hed").addEventListener("click", function(){
+        wired_headphone(data)
+    })
+
+    document.getElementById("amp").addEventListener("click", function(){
+        amps_dacs(data)
+    })
+
+    document.getElementById("wirless").addEventListener("click", function(){
+        true_wirless(data)
+    })
+
+    document.getElementById("wirless_hed").addEventListener("click", function(){
+        wirless_headphone(data)
+    })
 }
 
 const catchProduct = (data,i,id) =>{
@@ -104,5 +127,104 @@ pro.forEach((ele) =>{
     }
 })
 localStorage.setItem("Product",JSON.stringify(obj))
+<<<<<<< HEAD
 }
 
+=======
+// <<<<<<< HEAD
+}
+
+// const 
+
+// document.getElementById("wired_ear").addEventListener("click",function(){
+//     wired_ear()
+// })
+
+const wired_ear= (data) =>{
+    
+    let product=data.filter((ele) => {
+        return ele.type === "Wired Earphone"
+    })
+displaydata(product)
+}
+
+const wired_headphone = (data) =>{
+
+
+    let product = data.filter((ele) =>{
+        return ele.type === "Wired Headphone"
+    })
+    displaydata(product)
+}
+
+const amps_dacs = (data) =>{
+
+
+        let product = data.filter((ele) =>{
+            return ele.type === "AMP and DACS";
+        })
+        displaydata(product)
+}
+
+const true_wirless = (data) =>{
+    let product = data.filter((ele) =>{
+        return ele.type === "True Wirless"
+    })
+    displaydata(product)
+}
+
+const wirless_headphone = (data) =>{
+    let product = data.filter((ele) =>{
+        return ele.type === "Wirless headphone"
+    })
+    displaydata(product)
+ 
+}
+
+
+function displaydata(data){
+    let nj_card = document.getElementById("nj_productCard");
+    nj_card.innerHTML = null;
+
+    data.forEach((ele) =>{
+        let card = document.createElement("div");
+
+        let img = document.createElement("img");
+
+        img.src = ele.ProImg[1];
+
+        let img_div = document.createElement("div");
+        img_div.append(img)
+
+        let name = document.createElement("h4") ;
+        name.innerText = ele.name
+
+        let mrp = document.createElement("p");
+        mrp.setAttribute("class", "nj_mrp")
+        mrp.innerText = `MRP:₹ ${ele.MRP}`;
+
+        let selling_price = document.createElement("p");
+        selling_price.setAttribute("class", "nj_mrp")
+        selling_price.innerText = `Selling Price:₹ ${ele.SellingPrice}`
+
+        let sale_price = document.createElement("p");
+        sale_price.innerText = 'Sale Price:₹'  
+
+        let price_span = document.createElement("span");
+        price_span.innerText = `${ele.OfferPrice}`;
+        sale_price.append(price_span)
+        price_span.style.color = "blue"
+        price_span.style.fontSize = "20px";
+
+        let icones = document.createElement("img");
+        icones.src = "https://i.ibb.co/ZVwk75c/icones.jpg";
+
+
+        card.append(img_div,name,mrp,selling_price,sale_price,icones);
+        nj_card.append(card)
+    })
+
+}
+
+
+>>>>>>> 62d29703f26fc345227db7784bb945845f49efa6
