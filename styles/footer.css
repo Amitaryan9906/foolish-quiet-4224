@@ -1,0 +1,52 @@
+* {
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+#RPfooter {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    margin-bottom: -10px;
+}
+
+.RPfooterdiv ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: small;
+}
+
+.RPfooterdiv {
+    width: 19%;
+    margin-top: 50px;
+}
+
+.RPfooterdiv h3 {
+    text-align: center;
+    margin-right: 40px;
+    margin-bottom: 15px;
+}
+
+.RPfooterdiv p {
+    text-align: left;
+    line-height: 20px;
+}
+
+#RPfooterdiv2 {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin-top: -14px;
+}
+
+#RPfooterdiv2 p {
+    font-size: small;
+}
+
+#RPfootermain {
+    background-color: #f9f9f9;
+}
+
+#RPfaicon {
+    margin-left: 24px;
+}

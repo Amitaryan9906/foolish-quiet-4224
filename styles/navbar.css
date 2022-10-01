@@ -1,0 +1,267 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#logoRP a img {
+    width: 100px;
+    height: 60px;
+}
+
+#navbarRP {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgrey;
+    align-items: center;
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f9f9f9;
+    z-index: 1;
+}
+
+#navbarRP img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+#navleftRP {
+    /* float: left; */
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#navleftRP>ul {
+    display: flex;
+}
+
+#navleftRP>ul>li {
+    padding: 0px 10px;
+    list-style: none;
+}
+
+#navleftRP a {
+    text-decoration: none;
+    color: black;
+}
+
+#navleftRP a:hover {
+    padding-bottom: 3px;
+    border-bottom: 2px solid black;
+}
+
+#rightnavRP {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mm1RP {
+    position: absolute;
+    top: 150%;
+    left: 0px;
+    width: 100%;
+    height: 300px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    display: flex;
+}
+
+#navleftRP>ul>li:hover .mm1RP {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    background-color: white;
+    margin-top: 1px;
+    /* background-color: lightgray; */
+}
+
+.mmitemsRP {
+    flex-basis: 15%;
+    margin: auto;
+}
+
+.mmitemsRP ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.mm2RP {
+    position: absolute;
+    top: 150%;
+    left: 0px;
+    width: 100%;
+    height: 450px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    display: flex;
+}
+
+#navleftRP>ul>li:hover .mm2RP {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    background-color: white;
+    margin-top: 1px;
+}
+
+.mmitemsRP {
+    flex-basis: 15%;
+    margin: auto;
+}
+
+.mmitemsRP ul li {
+    list-style: none;
+    padding: 3px;
+}
+
+.mmitemsRP a {
+    color: red;
+}
+
+#rightnavRP input[type="text"] {
+    width: 150px;
+    padding: 6px;
+}
+
+#rightnavRP a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+}
+
+#navleftRP>ul>li:hover .mm3RP {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    background-color: white;
+    margin-left: 27%;
+    margin-top: 1px;
+}
+
+.mmitems2RP {
+    flex-basis: 80%;
+    margin: auto;
+}
+
+.mmitems2RP ul li {
+    list-style: none;
+    padding: 3px;
+}
+
+.mmitems2RP a {
+    color: red;
+}
+
+#rightnavRP input[type="text"] {
+    outline: none;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 20px;
+}
+
+#show:checked~#sicontainerRP {
+    display: block;
+}
+
+.mmitemsRP h3 a {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#RPicon img {
+    width: 130px;
+    height: 70px;
+}
+
+li #RPred {
+    color: red;
+}
+
+.RPboldi a {
+    font-size: medium;
+}
+
+#RPcart {
+    display: flex;
+}
+
+.mm3RP {
+    position: absolute;
+    top: 150%;
+    left: 0px;
+    width: 24%;
+    height: 220px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    display: flex;
+}
+
+.mmitems2RP {
+    flex-basis: 80%;
+    margin: auto;
+}
+
+.mmitems2RP ul li {
+    list-style: none;
+    padding: 3px;
+}
+
+#rightnavRP h4 {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.mm5RP {
+    position: absolute;
+    top: 150%;
+    left: 0px;
+    width: 15%;
+    height: 180px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    display: flex;
+}
+
+#navleftRP>ul>li:hover .mm5RP {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    background-color: white;
+    margin-left: 30%;
+    margin-top: 1px;
+}
+
+.mm6RP {
+    position: absolute;
+    top: 150%;
+    left: 0px;
+    width: 22%;
+    height: 180px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    display: flex;
+}
+
+#navleftRP>ul>li:hover .mm6RP {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    background-color: white;
+    margin-left: 46%;
+    margin-top: 1px;
+}
