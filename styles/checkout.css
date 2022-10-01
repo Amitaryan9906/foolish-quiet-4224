@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+  }
+    /* Add padding to containers */
+    #mk_container{
+      display: grid;
+      grid-template-columns: 55% 45%
+      
+      
+  }
+
+  #mk_box1{
+    background-color: white;    
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+  #mk_div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid red;
+}
+
+
+form{
+    /* border: 1px solid red; */
+    width: 100%;
+
+}
+  #mk_container>div{
+    padding: 40px;
+}
+  
+  /* Full-width input fields */
+  input[type=text], input[type=email],input[type=number],select {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 3px;
+  }
+  input[type=checkbox], input[type=radio] {
+    width: 20px;
+    height: 16px;
+  }
+
+  .bg_yellow{
+background-color: rgb(249, 229, 138);
+padding: 15px;
+margin: 22px 0px;
+  }
+
+#fname,#lname{
+    width: 49.55%;
+}
+#three_input{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    column-gap: 5px;
+}
+input[type=submit]{
+    background-color:#3c07ff ;
+    width: 35%;
+    padding: 15px;
+    margin: 25px 0 40px 0;
+    display: inline-block;
+    border-radius: 3px;
+    outline: none;
+    color: white;
+    font-weight: 100;
+margin-left: 65%;
+border: 1px solid #3c07ff;
+}
+
+
+/*box 2 csss */
+
+#mk_box2{
+  background-color: rgb(250, 240, 240);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#giftcard_discount{
+width: 74%;
+}
+#mk_box2>button{
+  background-color:#86858b ;
+  width: 25%;
+  padding: 15px;
+  margin: 25px 0 40px 0;
+  display: inline-block;
+  border-radius: 3px;
+  outline: none;
+  color: white;
+  font-weight: 100;
+  border: none;
+}
+
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #d6d5d5;
+    margin-bottom: 25px;
+  }
+
+
+
+
+
+
+
+
+
+#mk_div>p~p{
+    text-align: end;}
