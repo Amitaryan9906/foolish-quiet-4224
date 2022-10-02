@@ -2,7 +2,7 @@ const viewCart=()=>{
     return ` <div id="mywindowCart" class="windowCart">
     <div id="popup_body">
       <div id="popup_nav">
-      <div>
+       <div>
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdqmo9Tf03Ld28hxLG99nIdNbJLiC7QhJwRz1fNLvLAJknVxVmyXUbBrbvuUH1gfjNMTg&usqp=CAU" alt="">
           <p><span id="total_items">0</span>  ITEM</p>
         </div>

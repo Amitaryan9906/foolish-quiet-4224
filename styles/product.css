@@ -13,6 +13,8 @@ body{
     position:sticky;
     display:flex;
     top:0;
+    left:0;
+    right:0;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     align-items: center;
     align-items: center;
@@ -220,6 +222,9 @@ top:120px;
 width:44%;
 height:auto;
 padding:20px;
+}
+#Aproduct>*{
+    margin-top: 20px;
 }
 #Aproduct>div{
     display: flex;

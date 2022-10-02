@@ -1,7 +1,7 @@
 .windowCart {
     height: 95%;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     top: 0;
     right: 0;
     background-color: white;
@@ -49,11 +49,15 @@
   justify-content:space-between;
   flex-direction:row;
   }
-  #popup_nav>img{
-    width:35px;
+  #popup_nav img{
+    width:25px;
+    left: 0;
     margin-right: 30px
   }
-
+  #popup_nav a>img{
+   height: 10px;
+   width: 10px;
+  }
   #popup_nav>*{
     display: flex;
     margin-top: 30px;
@@ -123,8 +127,24 @@
   #cart_products img{
     width:100px
   }
+  #cart_products>div{
+    display:flex;
+    border-top: 1px solid rebeccapurple;
+    flex-direction:column;
+  }
+  #cart_products>div>button{
+height: 35px;
+border-radius: 50px;
+width: 90%;
+margin:auto;
+  }
+  #cart_products>div>p:nth-child(3){
+    text-decoration: line-through;
+  }
 
-
+  #cart_products>div>*{
+    margin-left:40px;
+  }
   #checkout>img{
     position: absolute;
     width: 20px;
@@ -132,6 +152,6 @@
   } 
  
 #closebtn{
-  border: 1px solid blue;
-  width: 600px;
+  position: absolute;
+  margin-left: 350px;
 }

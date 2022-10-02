@@ -50,13 +50,12 @@ moreImg.append(icons)
 icons.addEventListener('click',()=>{
   localStorage.setItem('ImgData',JSON.stringify(data.Proimg[i]));
   console.log("Hello")
-  window.location.href="product.html"
 })
 }
 let imgData=JSON.parse(localStorage.getItem('ImgData'))
 console.log(imgData)
 let img = document.createElement('img');
-img.src=imgData;
+img.src=imgData || data.Proimg[1];
 ProImgData.append(img,moreImg)
   }
   ProImg(pData)
@@ -127,12 +126,14 @@ wish_div.append(gif,wish_container);
     let text2 = document.createElement('h3');
     text2.innerHTML=data.Discount;
 
-    let cartData=JSON.parse(localStorage.getItem('cart_items')) || [];
+    let cartData=JSON.parse(localStorage.getItem('cart_item')) || [];
     let addToCart = document.createElement('button');
     addToCart.innerHTML="ADD TO CART";
     addToCart.addEventListener('click', () =>{
       cartData.push(pData)
-    localStorage.setItem('cart_items', JSON.stringify(cartData));
+    localStorage.setItem('cart_item', JSON.stringify(cartData));
+    window.location.href="product.html"
+
     // textDiv.append(text1,text2);
     // wish_div.append(gif,textDiv)
 
@@ -140,7 +141,7 @@ wish_div.append(gif,wish_container);
     let confusion= document.createElement('button');
     confusion.innerHTML="CONFUSED? TALK TO A HEADPHONE GURU"
     confusion.addEventListener('click', () =>{
-
+window.location.href='finder.html'
     })
     box.append(product_name,rating,mrp,sPrice,offer_price,bankOffer,wish_div,addToCart,confusion)
 products.append(box)
@@ -353,13 +354,14 @@ PopupData.append(PopupImg,anchor);
 let PopUpBtn =document.createElement("button");
 PopUpBtn.innerHTML='ADD TO CART';
 
-let cartData=JSON.parse(localStorage.getItem('cart_items')) || [];
+let cartData=JSON.parse(localStorage.getItem('cart_item')) || [];
 
 
 PopUpBtn.addEventListener("click",()=>{
+  window.location.href='product.html'
 
   cartData.push(pData)
-  localStorage.setItem('cart_items',JSON.stringify(cartData));
+  localStorage.setItem('cart_item',JSON.stringify(cartData));
 })
 
 PopUpnavbar.append(PopupData,PopUpBtn)
@@ -398,6 +400,8 @@ ON.style.opacity ='0.2';
  footer.style.position='fixed';
  footer.style.visibility="hidden"
 document.querySelector('#navigationBar').style.position='fixed';
+// document.querySelector('#navigationBar').style.;
+
   document.getElementById("mywindowCart").style.width = "550px";
   totalPrice()
   totalItems()
@@ -416,17 +420,17 @@ end.addEventListener("click",()=>{
  off.style.pointerEvents="auto";
  footer.style.position='static';
  footer.style.visibility="visible"
- document.querySelector('#navigationBar').style.position='sticky';
 
 })
 
 
 
 //  View Cart Data 
-let CartData=JSON.parse(localStorage.getItem('cart_items'))
+let CartData=JSON.parse(localStorage.getItem('cart_item'))
 
 const viewCartData= (data) =>{
-  data=data.map((ele)=>{
+  document.getElementById('cart_products').innerHTML=null;
+  data=data.map((ele,index) =>{
     let div=document.createElement("div");
 
     let img=document.createElement("img");
@@ -440,10 +444,17 @@ const viewCartData= (data) =>{
 
     let price=document.createElement('p');
     price.innerHTML=ele.SellingPrice;
+       
+    let remove=document.createElement("button");
+    remove.innerHTML="Remove";
 
-   
 
-    div.append(img,products,sPrice,price);
+    remove.addEventListener("click",function(){
+      deleteData(data,index)
+    })
+    
+
+    div.append(img,products,sPrice,price,remove);
     document.getElementById('cart_products').append(div) 
    })
 
@@ -455,19 +466,19 @@ viewCartData(CartData)
 //  For totalItems
 
 const totalItems=()=>{
-let cdata=JSON.parse(localStorage.getItem('cart_items'))
+let cdata=JSON.parse(localStorage.getItem('cart_item'))
 return (document.getElementById('total_items').innerHTML=cdata.length)
 }
 
 const totalItemsNav =()=>{
-let cdata=JSON.parse(localStorage.getItem('cart_items'))
+let cdata=JSON.parse(localStorage.getItem('cart_item'))
 return (document.getElementById('totalcart').innerHTML=cdata.length)
 }
 totalItemsNav()
 //  For Total Price 
 
 const totalPrice =()=>{
-  let cdata=JSON.parse(localStorage.getItem('cart_items'))
+  let cdata=JSON.parse(localStorage.getItem('cart_item'))
 cdata.reduce((ac,ele)=>{
 return document.getElementById('total_price').innerHTML=(ac+Number(ele.SellingPrice))
 
@@ -476,4 +487,21 @@ return document.getElementById('total_price').innerHTML=(ac+Number(ele.SellingPr
 }
 
 
+//delet from localStorage
+
+function deleteData(data,index) {
+  let cartData=JSON.parse(localStorage.getItem("cart_item"))
+cartData= data.filter(function(ele,i){
+  return i!==index
+})
+// localStorage.setItem("cart_item",JSON.stringify(cartData))
+viewCartData(CartData)
+totalItems()
+console.log(cartData)
+}
+let checkoutbtn=document.getElementById('checkout');
+checkoutbtn.addEventListener("click", ()=>{
+  window.location.href='checkout.html'
+
+})
 
