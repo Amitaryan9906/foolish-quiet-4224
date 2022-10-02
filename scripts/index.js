@@ -137,7 +137,12 @@ localStorage.setItem("ImgData",JSON.stringify(img))
 
 }
 
-
+// <<<<<<< fw20_0122_day-5
+// =======
+// // =======
+// // <<<<<<< HEAD
+// // }
+// >>>>>>> main
 // const 
 
 // document.getElementById("wired_ear").addEventListener("click",function(){
