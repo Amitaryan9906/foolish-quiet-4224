@@ -1,7 +1,8 @@
 function navbar() {
     return ` <div id="navleftRP">
-    <div id="RPicon">
-    <a href="index.html" id="RPa">    <img src="./images/images-removebg-preview.png"  alt="error" >  </a>
+    <div id="RPicons">
+    <a href="index.html" id="RPaaa">    <img id="RRR" src="./images/images-removebg-preview.png"  alt="error" >  </a>
+        
 
     </div>
     <ul>

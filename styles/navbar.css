@@ -2,14 +2,13 @@
     padding: 0px;
     margin: 0px;
     font-family: sans-serif;
-   
 }
 
-#RPa {
+#RPaaa {
     text-decoration: none;
 }
 
-#navleftRP #RPa:hover {
+#navleftRP #RPaaa:hover {
     padding-bottom: 3px;
     border-bottom: 2px solid transparent;
 }
@@ -188,9 +187,11 @@
     margin-top: 10px;
 }
 
-#RPicon img {
+#RPicons img {
     width: 130px;
     height: 70px;
+    border: none;
+    background: none;
 }
 
 li #RPred {
