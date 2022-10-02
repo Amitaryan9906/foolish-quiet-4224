@@ -388,26 +388,35 @@ import {viewCart} from '../components/cart.js'
 
 popup_cart.innerHTML=viewCart()
 
-let Pop=document.getElementById('openPOP');
+let Pop=document.querySelector('#rightnavRP>a+a');
 Pop.addEventListener('click',()=>{
- 
+ let footer=document.querySelector('#footer');
   let ON=document.querySelector("#bodyP");
 ON.style.opacity ='0.2';
  ON.style.position="fixed";
  ON.style.pointerEvents="none";
+ footer.style.position='fixed';
+ footer.style.visibility="hidden"
+document.querySelector('#navigationBar').style.position='fixed';
   document.getElementById("mywindowCart").style.width = "550px";
   totalPrice()
   totalItems()
+  
 })
 
-let end= document.querySelector(".closebtn");
+let end= document.querySelector("#closebtn");
 end.addEventListener("click",()=>{
+  let footer=document.querySelector('#footer');
+
   document.getElementById("mywindowCart").style.width = "0";
  let off= document.querySelector("#bodyP")
  off.style.backgroundColor="";
  off.style.opacity="1";
  off.style.position="static";
  off.style.pointerEvents="auto";
+ footer.style.position='static';
+ footer.style.visibility="visible"
+ document.querySelector('#navigationBar').style.position='sticky';
 
 })
 
@@ -417,7 +426,6 @@ end.addEventListener("click",()=>{
 let CartData=JSON.parse(localStorage.getItem('cart_items'))
 
 const viewCartData= (data) =>{
-let box=document.createElement("div")
   data=data.map((ele)=>{
     let div=document.createElement("div");
 
@@ -451,17 +459,21 @@ let cdata=JSON.parse(localStorage.getItem('cart_items'))
 return (document.getElementById('total_items').innerHTML=cdata.length)
 }
 
-
+const totalItemsNav =()=>{
+let cdata=JSON.parse(localStorage.getItem('cart_items'))
+return (document.getElementById('totalcart').innerHTML=cdata.length)
+}
+totalItemsNav()
 //  For Total Price 
 
 const totalPrice =()=>{
   let cdata=JSON.parse(localStorage.getItem('cart_items'))
 cdata.reduce((ac,ele)=>{
 return document.getElementById('total_price').innerHTML=(ac+Number(ele.SellingPrice))
+
 },0)
   
 }
-// totalPrice()
 
 
 
