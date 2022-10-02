@@ -1,7 +1,7 @@
 function navbar() {
     return ` <div id="navleftRP">
     <div id="RPicon">
-        <img src="./images/images-removebg-preview.png" alt="error">
+    <a href="index.html" id="RPa">    <img src="./images/images-removebg-preview.png"  alt="error" >  </a>
 
     </div>
     <ul>
@@ -180,7 +180,7 @@ function navbar() {
                 </div>
             </div>
         </li>
-        <li class="RPboldi"> <a href="#">Headphone Finder </a> </li>
+        <li class="RPboldi"> <a href="finder.html">Headphone Finder </a> </li>
         <li class="RPboldi"> <a href="#">Events </a>
             <div class="mm6RP">
                 <div class="mmitems2RP">
@@ -255,13 +255,13 @@ function navbar() {
 
 <div id="rightnavRP">
 
-    <span style="cursor:pointer" onclick="openNav()">search</span>
+ <span style="cursor:pointer" onclick="openNav()">search </span> 
     <!----  <input type="text" class="fa fa-search" placeholder="Search">-->
     <a href="signin.html">Login</a>
     <!-- <i style="font-size:20px" class="fa">&#xf290;</i> -->
 
-    <a href="#">Cart</a>
-    <h4 id="RPh4"> 0 </h4>
+    <a href="#">Cart <span id="totalcart">0 </span></a>
+    
 
 </div>`;
 };

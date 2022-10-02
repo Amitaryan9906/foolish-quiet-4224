@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/checkout.css">
+
+</head>
+<body>
+    <div id="mk_container">
+
+    <div id="mk_box1">
+        <div id="inner_mk_box1">
+     <div id="logo">
+        <a ><img src="./images/images-removebg-preview.png"></a><br>
+        <span><a href="#">Cart</a> &#62; <a href="#">Information</a> &#62; <a href="#">Payment</a></span>
+     </div>
+     <div id="mk_div">
+        <p>Contact information</p>
+        <p>Already have an
+         account?<span><a href="signin.html">Log in</a></span></p>
+     </div>
+     <form>
+        <input type="email" placeholder="Email" id="email">
+        <input type="checkbox" id="checked" >
+        <label for="checked">Email and WhatsApp me with news and offers</label><br>
+       <p class="bg_yellow">GST details:      Is your organisation registered under GST ACT in India?</p>
+
+        <input type="radio"  id="yes" name="Gst_detail" value="YES" onclick="myFunction(this.value)">
+        <label for="yes">Yes, registered under GST ACT</label>
+        <input type="radio"  id="no" name="Gst_detail" value="NO" onclick="myFunction(this.value)">
+        <label for="no">No, not registered under GST ACT.</label><br>
+        
+
+    <p class="bg_yellow">Please enter your GST number now. Once order has been placed, no modifications can be made to add your GST number to the invoice.</p>
+    
+    <p>Shipping address</p>
+    <select id="country">
+        <option value="India">India</option>
+    </select>
+    <input type="text" placeholder="First name" id="fname">
+    <input type="text" placeholder="Last name" id="lname">
+    <input type="text" placeholder="Address" id="add">
+   <div id="three_input">
+    <input type="text" placeholder="City" id="city">
+
+    <select id="state">
+        <option value="" placeholder="state">State</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Chhattisgarh">Chhattisgarh</option>
+        <option value="Goa">Goa</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Meghalaya">Meghalaya</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Telangana">Telangana</option>
+    </select>
+
+    <input type="text"  id="pin" placeholder="PIN code">
+</div>
+    <input type="number" id="mob" placeholder="Phone">
+<!---<input type="checkbox" checked="checked" name="save_time">-->
+    <input type="checkbox" value="true" id="save_time" checked="checked">
+        <label for="save_time">Save this information for next time</label><br>
+    
+    <input type="submit" value="Continue to payment method">    
+    </form>
+
+    <div>
+        <h3>Safety first! Pay online to ensure contactless delivery</h3>
+        <hr>
+        <span><a href="#">Refund policy</a></span>
+        <span><a href="#">Privacy policy</a></span>
+        <span><a href="#">Terms of service</a></span>
+    </div>
+    </div>
+    </div>
+<!----end of 1st container-->
+
+    <!-- 2nd container start-->
+    <div id="mk_box2">
+        <div id="inner_mk_box2">
+        <div id="display_checkout">display checkout product</div>
+    <hr>
+<!--form open-->
+    <input id="giftcard_discount" type="text" placeholder="Gift card or discount code">
+    <button>Apply</button>
+<!--form close-->
+<hr>
+
+<div id="subtotal">
+<spane>Subtotal</spane>
+<spane id="calculateValue">output</spane><br>
+<spane>Shipping</spane>
+<spane>Calculate at next step</spane>
+</div>
+<hr>
+    
+ <div>
+<h1 id="total_output"></h1>
+ </div> 
+
+ 
+
+</div>  
+</div>
+<!-------end of 2nd box----->
+ </div>
+</body>
+</html>
+
+<script src="./scripts/checkout.js"></script>
