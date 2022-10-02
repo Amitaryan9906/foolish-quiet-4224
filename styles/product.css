@@ -1,6 +1,8 @@
 body{
     margin:0;
     padding:0;
+    max-width:100%;
+    overflow-x: hidden;
 }
 
 /*  Navigation Bar */
@@ -8,10 +10,13 @@ body{
 #navigationBar {
     z-index: 2;
     height: 90px;
-    background-color:blue;
     position:sticky;
-    top: 0;
+    display:flex;
+    top:0;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    align-items: center;
+    align-items: center;
+    background-color:white;
 }
 
 
@@ -208,7 +213,7 @@ margin:auto;
     margin:auto;
     margin-bottom: 50px;
 }
-.product{
+#Aproduct{
     position:absolute;
 left:50%;
 top:120px;
@@ -216,7 +221,7 @@ width:44%;
 height:auto;
 padding:20px;
 }
-.product>div{
+#Aproduct>div{
     display: flex;
     width:100%;
     background-color:blue;
@@ -224,11 +229,11 @@ padding:20px;
     border-radius:20px;
 margin: auto;
 }
-.product>div>img{
+#Aproduct>div>img{
     margin-left: 20px;
     margin-right: 50px;
 }
-.product div+button{
+#Aproduct div+button{
     width:100%;
     height:50px;
     border-radius:20px;
@@ -240,7 +245,7 @@ margin: auto;
     margin-top:30px;
 
 }
-.product button+button{
+#Aproduct button+button{
     width:100%;
     height:50px;
     border-radius:20px;
@@ -340,3 +345,4 @@ width: 70%;
 height: auto;
 margin: auto;
 }
+

@@ -2,7 +2,17 @@
 // Import navbar from components
 
 
+import { navbar } from "../components/navbar.js";
 
+let nav_div = document.getElementById("navigationBar");
+
+nav_div.innerHTML = navbar()
+
+import { footer } from "../components/footer.js";
+
+let foot_div = document.getElementById("footer");
+
+foot_div.innerHTML = footer();
 
 
 
@@ -53,7 +63,7 @@ ProImgData.append(img,moreImg)
 
 const appendProduct =(data)=>{
     let box=document.createElement('div');
-    box.className="product"
+    box.id="Aproduct"
 
 
     let product_name = document.createElement('h2')
@@ -369,4 +379,89 @@ function scrollFunction() {
 
  
 body.append(ProImgData,products,Dilivery_details,div1,div2,div2_P,div2_Img,div3)
+
+// For Pop cart Page
+
+let popup_cart = document.getElementById('cartP');
+
+import {viewCart} from '../components/cart.js'
+
+popup_cart.innerHTML=viewCart()
+
+let Pop=document.getElementById('openPOP');
+Pop.addEventListener('click',()=>{
+ 
+  let ON=document.querySelector("#bodyP");
+ON.style.opacity ='0.2';
+ ON.style.position="fixed";
+ ON.style.pointerEvents="none";
+  document.getElementById("mywindowCart").style.width = "550px";
+  totalPrice()
+  totalItems()
+})
+
+let end= document.querySelector(".closebtn");
+end.addEventListener("click",()=>{
+  document.getElementById("mywindowCart").style.width = "0";
+ let off= document.querySelector("#bodyP")
+ off.style.backgroundColor="";
+ off.style.opacity="1";
+ off.style.position="static";
+ off.style.pointerEvents="auto";
+
+})
+
+
+
+//  View Cart Data 
+let CartData=JSON.parse(localStorage.getItem('cart_items'))
+
+const viewCartData= (data) =>{
+let box=document.createElement("div")
+  data=data.map((ele)=>{
+    let div=document.createElement("div");
+
+    let img=document.createElement("img");
+    img.src=ele.Proimg[1];
+
+    let products = document.createElement('p');
+    products.innerHTML=ele.Name;
+
+    let sPrice = document.createElement('p')
+    sPrice.innerHTML=ele.MRP
+
+    let price=document.createElement('p');
+    price.innerHTML=ele.SellingPrice;
+
+   
+
+    div.append(img,products,sPrice,price);
+    document.getElementById('cart_products').append(div) 
+   })
+
+}
+viewCartData(CartData)
+
+
+
+//  For totalItems
+
+const totalItems=()=>{
+let cdata=JSON.parse(localStorage.getItem('cart_items'))
+return (document.getElementById('total_items').innerHTML=cdata.length)
+}
+
+
+//  For Total Price 
+
+const totalPrice =()=>{
+  let cdata=JSON.parse(localStorage.getItem('cart_items'))
+cdata.reduce((ac,ele)=>{
+return document.getElementById('total_price').innerHTML=(ac+Number(ele.SellingPrice))
+},0)
+  
+}
+// totalPrice()
+
+
 
