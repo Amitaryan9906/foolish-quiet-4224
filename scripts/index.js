@@ -134,7 +134,7 @@ let Data = JSON.parse(localStorage.getItem("Product"));
 let img=Data.Proimg[0]
 localStorage.setItem("ImgData",JSON.stringify(img))
 
-// <<<<<<< HEAD
+
 }
 
 
