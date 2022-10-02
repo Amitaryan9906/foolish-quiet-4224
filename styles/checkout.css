@@ -9,20 +9,25 @@ body{
     /* Add padding to containers */
     #mk_container{
       display: grid;
-      grid-template-columns: 55% 45%
-      
-      
+      grid-template-columns: 55% 45%;
   }
 
+  #mk_container>div{
+    padding:40px;
+}
   #mk_box1{
     background-color: white;    
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    }
-
+    /* border: 1px solid green; */
+  }
+#inner_mk_box1{
+/* border: 1px solid black; */
+padding-left: 120px;
+}
   #mk_div{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 
@@ -31,9 +36,7 @@ form{
     width: 100%;
 
 }
-  #mk_container>div{
-    padding: 40px;
-}
+
   
   /* Full-width input fields */
   input[type=text], input[type=email],input[type=number],select {
@@ -84,11 +87,16 @@ border: 1px solid #3c07ff;
 #mk_box2{
   background-color: rgb(250, 240, 240);
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+/* border: 1px solid red; */
 }
+#inner_mk_box2{
+  /* border: 1px solid black; */
+  padding-right: 120px;
+  }
 #giftcard_discount{
 width: 74%;
 }
-#mk_box2>button{
+#mk_box2>#inner_mk_box2>button{
   background-color:#86858b ;
   width: 25%;
   padding: 15px;
@@ -107,14 +115,14 @@ hr {
     border: 1px solid #d6d5d5;
     margin-bottom: 25px;
   }
+#logo>a>img{
+  height: 80px;
+  cursor: pointer;
+}
 
-
-
-
-
-
-
-
-
+#logo>span>a{
+  text-decoration: none;
+  font-size: smaller;
+}
 #mk_div>p~p{
     text-align: end;}
