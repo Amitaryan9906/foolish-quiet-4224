@@ -1,5 +1,5 @@
 function openNav() {
-  document.getElementById("mySidenav").style.width = "550px";
+  document.getElementById("mySidenav").style.width = "100%"//"550px";
   document.querySelector("body").style.backgroundColor="#b3b3b3"
  
 }
@@ -157,43 +157,70 @@ let arr=[
   
   ];
 
-
-
-
-
-
 function mkFunction(){
 
   let mk_container=document.getElementById("mkData")
   
   
-  for(let i=0; i<arr.length; i++){
-      let box=document.createElement("div");
-  box.setAttribute("class","box")
+  // for(let i=0; i<arr.length; i++){
+  //     let box=document.createElement("div");
+  // box.setAttribute("class","box")
   
-  let a=document.createElement("a")
-  a.setAttribute("href","url");
-  a.href="#"
-  let box2=document.createElement("div")
+  // let a=document.createElement("a")
+  // a.setAttribute("href","url");
+  // a.href="#"
+  // let box2=document.createElement("div")
+  // box2.setAttribute("class","box2")
+
+  // let name=document.createElement("h3");
+  // name.innerText=arr[i].name;
   
-  let name=document.createElement("h3");
-  name.innerText=arr[i].name;
+  // let discount=document.createElement("h4");
+  // discount.innerText=arr[i].discount;
   
-  let discount=document.createElement("h4");
-  discount.innerText=arr[i].discount;
+  // let price=document.createElement("h3");
+  // price.innerText=arr[i].price;
+  // price.style.color="red"
   
-  let price=document.createElement("h3");
-  price.innerText=arr[i].price;
-  price.style.color="red"
+  // let image=document.createElement("img");
+  // image.setAttribute("src","url")
+  // image.src=arr[i].url;
+  // a.append(image)
+  // box.append(a)
+  // box2.append(name,price,discount)
+  // mk_container.append(box,box2)
   
-  let image=document.createElement("img");
-  image.setAttribute("src","url")
-  image.src=arr[i].url;
-  a.append(image)
-  box.append(a)
-  box2.append(name,price,discount)
-  mk_container.append(box,box2)
-  
-  }
-      
+  // }
+   //append full page
+   for(let i=0; i<arr.length; i++){
+    let box=document.createElement("div");
+box.setAttribute("class","box")
+
+let a=document.createElement("a")
+a.setAttribute("href","url");
+a.href="#"
+let box2=document.createElement("div")
+box2.setAttribute("class","box2")
+
+let name=document.createElement("h3");
+name.innerText=arr[i].name;
+
+let discount=document.createElement("h4");
+discount.innerText=arr[i].discount;
+
+let price=document.createElement("h3");
+price.innerText=arr[i].price;
+price.style.color="red"
+
+let image=document.createElement("img");
+image.setAttribute("src","url")
+image.src=arr[i].url;
+box.append(a,name,price,discount)
+box2.append(name,price,discount)
+a.append(image,box2)
+
+
+mk_container.append(box)
+
+}   
   }
