@@ -32,7 +32,7 @@ slideShow(sliderImg);
 
 const productFetch = async () =>{
     try{
-        let res = await fetch(' http://localhost:3000/products');
+        let res = await fetch('http://localhost:3000/products');
 
         let data = await res.json();
         // console.log(data)
@@ -58,7 +58,9 @@ const dataAppend = (data) =>{
     let card = document.createElement("div");
     card.setAttribute("class","nj_card");
     card.addEventListener("click", function(){
-        catchProduct(data,i,ele.id)
+        
+        catchProduct(data,i,ele.id);
+        
 
     })
 
@@ -127,8 +129,14 @@ pro.forEach((ele) =>{
     }
 })
 localStorage.setItem("Product",JSON.stringify(obj))
+
+let Data = JSON.parse(localStorage.getItem("Product"));
+let img=Data.Proimg[0]
+localStorage.setItem("ImgData",JSON.stringify(img))
+
 // <<<<<<< HEAD
 }
+
 
 // const 
 

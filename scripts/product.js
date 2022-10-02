@@ -11,7 +11,7 @@
 let body = document.getElementById('body')
 
 let pData=JSON.parse(localStorage.getItem('Product'));
-console.log(pData);
+// console.log(pData);
 
 let products = document.createElement('div')
   products.id='products'
@@ -44,7 +44,7 @@ icons.addEventListener('click',()=>{
 })
 }
 let imgData=JSON.parse(localStorage.getItem('ImgData')) 
-console.log(imgData)
+// console.log(imgData)
 let img = document.createElement('img');
 img.src=imgData;
 ProImgData.append(img,moreImg)
