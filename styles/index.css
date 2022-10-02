@@ -4,6 +4,7 @@ body{
 }
 #nj_slider-top{
     border: 0px solid red;
+    margin-top: 30px;
     
 }
 
@@ -77,7 +78,7 @@ body{
 
 #nj_finance-section > div{
     border: 0px solid red;
-    height: 300px;
+    height: auto;
 
 }
 
@@ -93,7 +94,7 @@ body{
 }
 
 #nj_finance-section > div > p{
-    line-height: 10px;
+    line-height: 25px;
     color: #7f8d8c;
 }
 
@@ -160,3 +161,34 @@ body{
     text-decoration: line-through;
 }
 
+
+@media all and (min-width:481px) and (max-width:768px){
+    #nj_container{
+        border: 0px solid red;
+        width: 95%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+
+    }
+
+    #nj_finance-section{
+        border: 0px solid red;
+        height: 700px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 27% ;
+        height: auto;
+        gap: 30px;
+        justify-content: center;
+        background-color: #f5f5f5;
+        padding-top: 20px;
+    
+    }
+
+}
