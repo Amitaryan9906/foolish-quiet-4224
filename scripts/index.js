@@ -246,7 +246,7 @@ let foot_div = document.getElementById("RPfootermain");
 
 foot_div.innerHTML = footer();
 
-
-
-
+document.getElementById("nj_search").addEventListener("click",function (){
+    window.location.href="./search.html"
+})
 // >>>>>>> 62d29703f26fc345227db7784bb945845f49efa6
