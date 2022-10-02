@@ -21,7 +21,7 @@ foot_div.innerHTML = footer();
 let body = document.getElementById('bodyP')
 
 let pData=JSON.parse(localStorage.getItem('Product'));
-console.log(pData);
+// console.log(pData);
 
 let products = document.createElement('div')
   products.id='products'
@@ -53,8 +53,12 @@ icons.addEventListener('click',()=>{
   window.location.href="product.html"
 })
 }
+
+// let imgData=JSON.parse(localStorage.getItem('ImgData')) 
+
 let imgData=JSON.parse(localStorage.getItem('ImgData'))
 console.log(imgData)
+
 let img = document.createElement('img');
 img.src=imgData;
 ProImgData.append(img,moreImg)
