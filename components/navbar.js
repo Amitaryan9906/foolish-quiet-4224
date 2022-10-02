@@ -255,7 +255,7 @@ function navbar() {
 
 <div id="rightnavRP">
 
- <span style="cursor:pointer" onclick="openNav()">search </span> 
+ <span id="nj_search" style="cursor:pointer" onclick="openNav()">search </span> 
     <!----  <input type="text" class="fa fa-search" placeholder="Search">-->
     <a href="signin.html">Login</a>
     <!-- <i style="font-size:20px" class="fa">&#xf290;</i> -->

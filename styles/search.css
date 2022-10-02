@@ -12,6 +12,9 @@
   outline: none;
   border-bottom: 1px solid rgb(220, 219, 219);;
 }
+#mySidenav{
+  height: 500px;
+}
 
         .sidenav {
           height: 100%;
@@ -66,6 +69,7 @@
       #mkData{
         display:grid;
         grid-template-columns: repeat(4, 1fr);
+        /* height: 300px; */
         gap:40px;
         margin-top: 40px;
       }
@@ -84,11 +88,11 @@
           width: 100%;
       } */
 
-      img{
+      /* img{
         border-radius: 3px;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
       
-    }
+    } */
       .box,.box2{text-align: center;
        }
       /* #mkData>div>a>h3,h4{

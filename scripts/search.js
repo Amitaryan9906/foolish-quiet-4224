@@ -1,6 +1,7 @@
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%"//"550px";
   document.querySelector("body").style.backgroundColor="#b3b3b3"
+  
  
 }
 
@@ -224,3 +225,15 @@ mk_container.append(box)
 
 }   
   }
+
+import { navbar } from "../components/navbar.js";
+
+let nav_div = document.getElementById("navbarRP");
+
+nav_div.innerHTML = navbar();
+
+import { footer } from "../components/footer.js";
+
+let foot_div = document.getElementById("RPfootermain");
+
+foot_div.innerHTML = footer();
