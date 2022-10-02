@@ -163,6 +163,12 @@ body{
 
 
 @media all and (min-width:481px) and (max-width:768px){
+    #nj_slider-top{
+        border: 0px solid red;
+        margin-top: 30px;
+        
+    }
+   
     #nj_container{
         border: 0px solid red;
         width: 95%;
@@ -178,17 +184,38 @@ body{
 
     #nj_finance-section{
         border: 0px solid red;
-        height: 700px;
+        height: auto;
         margin-top: 25px;
         margin-bottom: 20px;
         display: grid;
-        grid-template-columns: 27% ;
+        grid-template-columns: 50% ;
         height: auto;
         gap: 30px;
         justify-content: center;
         background-color: #f5f5f5;
         padding-top: 20px;
     
+    }
+
+    #nj_flagbtn{
+        border: 0px solid red;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 50%;
+        gap: 10px;
+        justify-content: space-around;
+    }
+
+    #nj_productCard{
+        border: 0px solid blue;
+        margin-top: 10px;
+        display: grid;
+        /* justify-content: space-evenly; */
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        
     }
 
 }
