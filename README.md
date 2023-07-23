@@ -3,6 +3,13 @@
 **Overview:**
 The Headphone Zone Clone is a web application that replicates the features and functionalities of India's largest audiophile community, Headphone Zone. The website aims to provide users with an immersive audio experience, offering a wide range of audio products and services. With a user-friendly interface and a diverse tech stack, the Headphone Zone Clone is designed to cater to audio enthusiasts and customers seeking high-quality audio products.
 
+### click [Headphonezone](https://verdant-salamander-e059c6.netlify.app/) to view website
+## Screenshots
+![App Screenshot](https://github.com/Amitaryan9906/foolish-quiet-4224/blob/main/Headphonezone%20-%20Google%20Chrome%2023-07-2023%2022_04_02.png?raw=true)
+![App Screenshot](https://github.com/Amitaryan9906/foolish-quiet-4224/blob/main/Document%20-%20Google%20Chrome%2023-07-2023%2022_05_33.png?raw=true)
+
+![App Screenshot](https://github.com/Amitaryan9906/foolish-quiet-4224/blob/main/Headphonezone%20-%20Google%20Chrome%2023-07-2023%2022_01_15.png?raw=true)
+
 ## Key Features
 
 1. **Login and Sign-up Functionality:**
